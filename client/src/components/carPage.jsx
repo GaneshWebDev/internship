@@ -16,7 +16,7 @@ function CarPage() {
     const token = localStorage.getItem('jwtToken');
 
     axios
-      .get(`http://localhost:5000/user/search/?id=${id}`, {
+      .get(`https://internship-6xtt.onrender.com/user/search/?id=${id}`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
