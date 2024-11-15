@@ -1,7 +1,7 @@
 const User = require('../models/userModel'); 
 const Car =require('../models/carModel');
 const jwt = require('jsonwebtoken');
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 const ObjectId = require('mongodb').ObjectId;
 const mongoose=require('mongoose');
 const fs=require('fs');
