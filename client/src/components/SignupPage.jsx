@@ -16,7 +16,7 @@ const SignupPage = () => {
 
     try {
       const response = await axios.post(
-        'http://localhost:5000/user/signUp',
+        'https://internship-6xtt.onrender.com/user/signUp',
         {
           name: data.name,
           email: data.email,
