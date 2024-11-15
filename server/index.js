@@ -5,9 +5,7 @@ const connectDB= require('./db');
 const userRouter=require('./routes/userRoute');
 require('dotenv').config();
 app.use(express.json());
-app.use(cors({
-    origin: 'https://internship-2new.onrender.com/',
-  }));
+app.use(cors())
 app.use(express.urlencoded({ extended: true }));
 app.use(userRouter);
 connectDB();
