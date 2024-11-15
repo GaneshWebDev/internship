@@ -102,7 +102,7 @@ function AddCarForm() {
     console.log(formData,'ino')
     try {
       const token = localStorage.getItem('jwtToken');
-      const response = await axios.post('http://localhost:5000/user/add/car', formDataToSend, {
+      const response = await axios.post('https://internship-6xtt.onrender.com/user/add/car', formDataToSend, {
         headers: {
           'Content-Type': 'multipart/form-data',
           'Authorization': `Bearer ${token}`,
