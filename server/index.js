@@ -6,7 +6,7 @@ const userRouter=require('./routes/userRoute');
 require('dotenv').config();
 app.use(express.json());
 app.use(cors({
-    origin: 'http://localhost:5173',
+    origin: 'https://internship-new.onrender.com/',
   }));
 app.use(express.urlencoded({ extended: true }));
 app.use(userRouter);
