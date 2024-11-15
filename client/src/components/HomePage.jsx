@@ -22,7 +22,7 @@ function HomePage() {
 
   useEffect(() => {
     const token = localStorage.getItem('jwtToken');
-    axios.get('http://localhost:5000/user/getAllCars', {
+    axios.get('https://internship-6xtt.onrender.com/user/getAllCars', {
       headers: {
         'Authorization': `Bearer ${token}`
       }
