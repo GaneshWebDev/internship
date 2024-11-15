@@ -19,7 +19,7 @@ const LoginPage = () => {
     setError('');
     try {
       // Send data to your API (replace '/api/login' with your actual endpoint)
-      const response = await axios.post('http://localhost:5000/user/signIn', {
+      const response = await axios.post('https://internship-6xtt.onrender.com/user/signIn', {
         email: data.email,
         password: data.password,
       },
